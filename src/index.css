@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+
+@keyframes gradientFlow {
+  to {
+    background-position: 200%;
+  }
+}
+.gradient {
+  background: linear-gradient(to right,#00aaa7, #7e42a7, #6600c5, #6070fd,#2a46ff, #0099ff, #008ead);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 2.5s linear infinite;
+}
