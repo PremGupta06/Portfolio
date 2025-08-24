@@ -142,9 +142,6 @@ export default function App() {
         className="rounded-xl shadow-lg w-full"
         alt="Project 1"
       />
-      {/* <img src="/images/pro2.png"
-      className="rounded-xl shadow-lg w-full" 
-      alt="Project 2" /> */}
     </a>
     <div className="md:w-1/2 space-y-4">
       <h1 className="text-2xl font-bold">
@@ -192,73 +189,67 @@ export default function App() {
   </div>
 </section>
 
-
-      {/* Skills */}
-     <section className="w-4/5 mx-auto py-16" id="skills">
+{/* Skills */}
+<section className="w-4/5 mx-auto py-16 relative" id="skills">
   {/* Title */}
-  <h1 className="text-4xl font-bold text-center mb-12">
+  <h1 className="text-4xl font-bold text-center mb-25">
     My <span className="gradient">Skills</span> 💪
   </h1>
 
-  <div className="relative">
-    {/* Background Image */}
+  {/* Background Image */}
+  <div className="relative w-full h-[500px]">
     <img
       src="/images/digitalbrain.png"
       alt="skills"
-      className="opacity-20 rounded-3xl w-full h-[500px] object-cover"
+      className="opacity-20 rounded-3xl w-full h-full object-cover"
     />
 
     {/* Skills Cards */}
-    <div className="absolute inset-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-6 place-items-center">
-      {/* Designer */}
-      <div className="w-full max-w-sm backdrop-blur-md p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
-        <h1 className="gradient text-2xl md:text-3xl mb-3 font-bold flex items-center gap-2">
-          Designer <i className="bx bx-laptop"></i>
-        </h1>
-        <p className="text-gray-200 text-justify text-sm md:text-base">
-          Designer with strong expertise in HTML, CSS, JavaScript, and modern
-          design principles. Passionate about crafting clean, user-friendly, and
-          scalable websites that deliver exceptional user experiences. Skilled
-          in creating responsive and interactive web interfaces while keeping a
-          security-first mindset.
-        </p>
-      </div>
+    <div className="absolute inset-0 flex items-center justify-center p-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        {/* Designer */}
+        <div className="w-full backdrop-blur-md p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
+          <h1 className="gradient text-2xl md:text-3xl mb-3 font-bold flex items-center gap-2">
+            Designer <i className="bx bx-laptop"></i>
+          </h1>
+          <p className="text-gray-200 text-justify text-sm md:text-base">
+            Designer with strong expertise in HTML, CSS, JavaScript, and modern
+            design principles. Passionate about crafting clean, user-friendly,
+            and scalable websites that deliver exceptional user experiences.
+          </p>
+        </div>
 
-      {/* Coder */}
-      <div className="w-full max-w-sm backdrop-blur-md p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
-        <h1 className="gradient text-2xl md:text-3xl mb-3 font-bold flex items-center gap-2">
-          Coder <i className="bx bx-code-block"></i>
-        </h1>
-        <p className="text-gray-200 text-justify text-sm md:text-base">
-          Skilled in React, Node.js, and MongoDB with a focus on building
-          scalable, secure, and high-performance full-stack applications.
-          Specialized in developing interactive frontends and efficient database
-          architectures to deliver seamless user experiences.
-        </p>
-      </div>
+        {/* Coder */}
+        <div className="w-full backdrop-blur-md p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
+          <h1 className="gradient text-2xl md:text-3xl mb-3 font-bold flex items-center gap-2">
+            Coder <i className="bx bx-code-block"></i>
+          </h1>
+          <p className="text-gray-200 text-justify text-sm md:text-base">
+            Skilled in React, Node.js, and MongoDB with a focus on building
+            scalable, secure, and high-performance full-stack applications.
+          </p>
+        </div>
 
-      {/* Security Beginner */}
-      <div className="w-full max-w-sm backdrop-blur-md p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
-        <h1 className="gradient text-2xl md:text-3xl mb-3 font-bold flex items-center gap-2">
-          Security Explorer <i className="bx bx-shield"></i>
-        </h1>
-        <p className="text-gray-200 text-justify text-sm md:text-base">
-          I’m just starting my journey in cybersecurity, exploring Kali Linux,
-          networking, and penetration testing. Although I don’t have much
-          knowledge yet, I’m eager to learn how systems work, identify
-          vulnerabilities, and secure applications.
-        </p>
+        {/* Security Explorer */}
+        <div className="w-full backdrop-blur-md p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
+          <h1 className="gradient text-2xl md:text-3xl mb-3 font-bold flex items-center gap-2">
+            Security Explorer <i className="bx bx-shield"></i>
+          </h1>
+          <p className="text-gray-200 text-justify text-sm md:text-base">
+            I’m just starting my journey in cybersecurity, exploring Kali Linux,
+            networking, and penetration testing. Although I don’t have much
+            knowledge yet, I’m eager to learn and secure applications.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-
-      {/* Contact */}
-<section className="w-11/12 sm:w-4/5 mx-auto my-20 text-center" id="contact">
+{/* Contact */}
+<section className="w-11/12 sm:w-4/5 mx-auto mt-32 mb-20 text-center relative z-10" id="contact">
   <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6">
-    Connect
-    <span className="gradient"> with me</span> 😊
+    Connect <span className="gradient">with me</span> 😊
   </h1>
 
   <p className="text-gray-300 max-w-xl sm:max-w-2xl mx-auto mb-12 text-sm sm:text-base px-2">
@@ -268,7 +259,6 @@ export default function App() {
 
   {/* Cards grid */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-    
     {/* LinkedIn */}
     <a
       href="https://www.linkedin.com/in/prem-gupta-616489335/"
@@ -321,19 +311,15 @@ export default function App() {
   </div>
 </section>
 
-
-
-      {/* Footer */}
-      
-      <footer className="w-full bg-white/10 backdrop-blur-md h-12 flex justify-between items-center px-6">
-       <div className="text-center"></div>
-        <h1>©️2025, Made with passion by Prem Gupta</h1>
-        <div className="flex gap-4">
-          <i className="bx bxl-gmail"></i>
-          <i className="bx bxl-github"></i>
-          <i className="bx bxl-linkedin-square"></i>
-        </div>
-      </footer>
+{/* Footer */}
+<footer className="w-full bg-white/10 backdrop-blur-md py-4 mt-10 flex flex-col sm:flex-row justify-between items-center px-6 text-sm text-white">
+  <h1 className="mb-2 sm:mb-0">©️2025, Made with passion by Prem Gupta</h1>
+  <div className="flex gap-4 text-lg">
+    <a href="mailto:premgupta062006@gmail.com"><i className="bx bxl-gmail"></i></a>
+    <a href="https://github.com/PremGupta06" target="_blank"><i className="bx bxl-github"></i></a>
+    <a href="https://www.linkedin.com/in/prem-gupta-616489335/" target="_blank"><i className="bx bxl-linkedin-square"></i></a>
+  </div>
+</footer>
     </div>
   );
 }
