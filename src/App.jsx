@@ -164,7 +164,7 @@ export default function App() {
   {/* Duplicate this block for more projects */}
   <div className="flex flex-col md:flex-row items-center gap-10">
     <a href="https://vk-costumes.vercel.app/" target="_blank" rel="noopener noreferrer" className="relative w-full md:w-1/2">
-      <img src="/images/pro2.png" className="rounded-xl shadow-lg w-full" alt="Project 2" />
+      <img src="/images/pro10.png" className="rounded-xl shadow-lg w-full" alt="Project 2" />
     </a>
     <div className="md:w-1/2 space-y-4">
       <h1 className="text-2xl font-bold">VK costumes (Client Website)<span className="gradient"> checker</span></h1>
