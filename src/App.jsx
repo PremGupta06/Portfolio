@@ -167,7 +167,7 @@ export default function App() {
       <img src="/images/pro10.png" className="rounded-xl shadow-lg w-full" alt="Project 2" />
     </a>
     <div className="md:w-1/2 space-y-4">
-      <h1 className="text-2xl font-bold">VK costumes (Client Website)<span className="gradient"> checker</span></h1>
+      <h1 className="text-2xl font-bold">VK costumes<span className="gradient">(Client Website)</span></h1>
       <p>VK Costumes, a business website made for marketing which displays the details of the costumes.</p>
       <a href="https://password-strength-checker-hlg5lf04w.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-3 inline-block rounded-lg border shadow bg-[#2200493d] hover:shadow-lg">
         <i className="bx bx-link-external"></i> Website
