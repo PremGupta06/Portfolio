@@ -380,7 +380,7 @@ export default function App() {
               demonstrate my front-end creativity and layout skills.
             </p>
             <a
-              href="https://github.com/PremGupta06/3D-web-Frontend"
+              href="https://3-d-web-frontend.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 inline-block rounded-lg border shadow bg-[#2200493d] hover:shadow-lg"
