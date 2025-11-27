@@ -323,18 +323,18 @@ export default function App() {
             </p>
             <ul className="text-sm space-y-3 text-gray-200">
               <li>
-                <span className="font-semibold">🎬 Reel Starter – ₹299</span>
+                <span className="font-semibold">🎬 Reel Starter – ₹699</span>
                 <br />
                 2 cinematic reels (up to 30s each) with smooth transitions.
               </li>
               <li>
-                <span className="font-semibold">🖥 Website Starter – ₹999</span>
+                <span className="font-semibold">🖥 Website Starter – ₹1,499</span>
                 <br />
                 1-page landing site, mobile-friendly & deployed.
               </li>
               <li>
                 <span className="font-semibold">
-                  🚀 Business Combo – ₹1,999
+                  🚀 Business Combo – ₹2,499
                 </span>
                 <br />
                 1 landing page + 2 reels – perfect for small businesses.
