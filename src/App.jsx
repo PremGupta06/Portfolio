@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "boxicons/css/boxicons.min.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
 
-AOS.init();
-
 export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: "ease-out",
+    });
+    AOS.refresh();
+  }, []);
 
   return (
     <div className="relative w-full min-h-screen flex flex-col items-center gap-24 bg-[#001f7c38] text-gray-200 pt-7">
@@ -380,7 +387,7 @@ export default function App() {
               demonstrate my front-end creativity and layout skills.
             </p>
             <a
-              href="https://3-d-web-frontend.vercel.app/"
+              href="https://github.com/PremGupta06/3D-web-Frontend"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 inline-block rounded-lg border shadow bg-[#2200493d] hover:shadow-lg"
@@ -458,20 +465,23 @@ export default function App() {
         </div>
       </section>
 
-      {/* Skills */}
+      {/* Skills – FIXED OVERLAY */}
       <section className="w-4/5 mx-auto py-16 relative" id="skills">
         <h1 className="text-4xl font-bold text-center mb-10">
           My <span className="gradient">Skills</span> 💪
         </h1>
 
-        <div className="relative w-full h-[500px]">
+        {/* Wrapper grows with content, image is just background */}
+        <div className="relative w-full rounded-3xl overflow-hidden">
+          {/* Background image */}
           <img
             src="/images/digitalbrain.png"
             alt="skills"
-            className="opacity-20 rounded-3xl w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
 
-          <div className="absolute inset-0 flex items-center justify-center p-6">
+          {/* Content on top */}
+          <div className="relative p-6 sm:p-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
               {/* Designer */}
               <div className="w-full backdrop-blur-md p-6 rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300">
@@ -493,9 +503,8 @@ export default function App() {
                 </h1>
                 <p className="text-gray-200 text-justify text-sm md:text-base">
                   Skilled in React, basic Node.js, and MongoDB with a focus on
-                  building structured and maintainable projects. I enjoy
-                  turning ideas into working, accessible, and efficient web
-                  experiences.
+                  building structured and maintainable projects. I enjoy turning
+                  ideas into working, accessible, and efficient web experiences.
                 </p>
               </div>
 
@@ -523,8 +532,7 @@ export default function App() {
         id="contact"
       >
         <h1 className="text-3xl sm:text-4xl font-bold text-center mb-6">
-          Let&apos;s{" "}
-          <span className="gradient">Work Together</span> 😊
+          Let&apos;s <span className="gradient">Work Together</span> 😊
         </h1>
 
         <p className="text-gray-300 max-w-xl sm:max-w-2xl mx-auto mb-12 text-sm sm:text-base px-2">
