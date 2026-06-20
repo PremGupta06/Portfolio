@@ -44,11 +44,6 @@ export default function App() {
             </a>
           </li>
           <li>
-            <a href="#services" className="font-bold hover:text-white">
-              Services
-            </a>
-          </li>
-          <li>
             <a href="#skills" className="font-bold hover:text-white">
               Skills
             </a>
@@ -109,11 +104,6 @@ export default function App() {
             <li>
               <a href="#about" onClick={() => setSidebarOpen(false)}>
                 About
-              </a>
-            </li>
-            <li>
-              <a href="#services" onClick={() => setSidebarOpen(false)}>
-                Services
               </a>
             </li>
             <li>
@@ -266,98 +256,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Services */}
-      <section
-        className="w-4/5 space-y-10 mt-10"
-        id="services"
-        data-aos="fade-up"
-        data-aos-duration="1800"
-      >
-        <h1 className="text-4xl font-bold text-center">
-          My <span className="gradient">Services</span> 💼
-        </h1>
-        <p className="text-center max-w-2xl mx-auto text-sm md:text-base text-gray-200">
-          I combine <span className="font-semibold">web development</span> and{" "}
-          <span className="font-semibold">video editing</span> to help you build
-          a strong online presence. Whether you&apos;re a{" "}
-          <span className="font-semibold">small business, creator, or student</span>,
-          I can create something tailored for you.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-8 mt-6">
-          {/* Web Dev */}
-          <div className="bg-[#110437e5] p-6 rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300">
-            <h2 className="text-2xl font-bold flex items-center gap-2 mb-3">
-              <span className="gradient">Web Development</span>{" "}
-              <i className="bx bx-code-block"></i>
-            </h2>
-            <p className="text-sm text-gray-200 mb-4">
-              Clean, responsive websites that look good on all devices.
-            </p>
-            <ul className="text-sm space-y-2 list-disc list-inside text-gray-200">
-              <li>Portfolio & personal websites</li>
-              <li>Business landing pages</li>
-              <li>Simple multi-page sites</li>
-              <li>UI redesign & improvements</li>
-            </ul>
-          </div>
-
-          {/* Video Editing */}
-          <div className="bg-[#110437e5] p-6 rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300">
-            <h2 className="text-2xl font-bold flex items-center gap-2 mb-3">
-              <span className="gradient">Video Editing</span>{" "}
-              <i className="bx bx-movie-play"></i>
-            </h2>
-            <p className="text-sm text-gray-200 mb-4">
-              Cinematic & aesthetic edits for social media and branding.
-            </p>
-            <ul className="text-sm space-y-2 list-disc list-inside text-gray-200">
-              <li>Instagram Reels & YouTube Shorts</li>
-              <li>Quote-based & sky edits</li>
-              <li>Promo edits for gyms, cafés, etc.</li>
-              <li>Basic YouTube edits</li>
-            </ul>
-          </div>
-
-          {/* Packages */}
-          <div className="bg-[#110437e5] p-6 rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-transform duration-300">
-            <h2 className="text-2xl font-bold flex items-center gap-2 mb-3">
-              <span className="gradient">Starter Packages</span>{" "}
-              <i className="bx bx-package"></i>
-            </h2>
-            <p className="text-sm text-gray-200 mb-4">
-              Special pricing while I&apos;m building my client base.
-            </p>
-            <ul className="text-sm space-y-3 text-gray-200">
-              <li>
-                <span className="font-semibold">🎬 Reel Starter – ₹699</span>
-                <br />
-                2 cinematic reels (up to 30s each) with smooth transitions.
-              </li>
-              <li>
-                <span className="font-semibold">🖥 Website Starter – ₹1,499</span>
-                <br />
-                1-page landing site, mobile-friendly & deployed.
-              </li>
-              <li>
-                <span className="font-semibold">
-                  🚀 Business Combo – ₹2,499
-                </span>
-                <br />
-                1 landing page + 2 reels – perfect for small businesses.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <p className="text-center text-xs md:text-sm text-gray-300 mt-4">
-          Prices are flexible for my early clients. If you have an idea,{" "}
-          <span className="font-semibold text-[#72a1de]">
-            feel free to reach out and we&apos;ll figure it out together.
-          </span>
-        </p>
-      </section>
-
       {/* Projects */}
       <section className="w-4/5 space-y-16 my-20" id="projects">
         <h1 className="text-4xl font-bold text-center">
@@ -432,37 +330,41 @@ export default function App() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-10">
-          <a
-            href="https://premgupta06.github.io/Flipkart-Clone/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative w-full md:w-1/2"
-          >
-            <img
-              src="/images/pro3.png"
-              className="rounded-xl shadow-lg w-full"
-              alt="Project 3"
-            />
-          </a>
-          <div className="md:w-1/2 space-y-4">
-            <h1 className="text-2xl font-bold">
-              Flipkart <span className="gradient">Frontend Clone</span>
-            </h1>
-            <p>
-              A frontend clone of Flipkart created to practice layout structure,
-              components, and responsive design, reflecting my understanding of
-              modern e-commerce UIs.
-            </p>
-            <a
-              href="https://premgupta06.github.io/Flipkart-Clone/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 inline-block rounded-lg border shadow bg-[#2200493d] hover:shadow-lg"
-            >
-              <i className="bx bx-link-external"></i> Website
-            </a>
-          </div>
-        </div>
+  <a
+    href="https://apex-tools-zeta.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative w-full md:w-1/2"
+  >
+    <img
+      src="/images/pro3.png"
+      className="rounded-xl shadow-lg w-full"
+      alt="Apex Tools"
+    />
+  </a>
+
+  <div className="md:w-1/2 space-y-4">
+    <h1 className="text-2xl font-bold">
+      Apex <span className="gradient">Tools</span>
+    </h1>
+
+    <p>
+      Apex Tools is a collection of useful online developer and productivity
+      tools designed to simplify everyday tasks. It provides a clean,
+      responsive interface with fast performance and easy accessibility for
+      users.
+    </p>
+
+    <a
+      href="https://apex-tools-zeta.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-6 py-3 inline-block rounded-lg border shadow bg-[#2200493d] hover:shadow-lg"
+    >
+      <i className="bx bx-link-external"></i> Website
+    </a>
+  </div>
+</div>
       </section>
 
       {/* Skills – FIXED OVERLAY */}
