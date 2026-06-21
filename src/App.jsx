@@ -264,7 +264,7 @@ export default function App() {
 
         <div className="flex flex-col md:flex-row items-center gap-10">
           <a
-            href="https://github.com/PremGupta06/3D-web-Frontend"
+            href="https://3-d-web-frontend.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative w-full md:w-1/2"
