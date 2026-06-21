@@ -337,7 +337,7 @@ export default function App() {
     className="relative w-full md:w-1/2"
   >
     <img
-      src="/images/pro3.png"
+      src="/images/ss.png"
       className="rounded-xl shadow-lg w-full"
       alt="Apex Tools"
     />
