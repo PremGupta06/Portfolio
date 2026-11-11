@@ -35,7 +35,7 @@ export default function Contact() {
 
   return (
     <section id='contact' className='relative mx-auto max-w-6xl scroll-mt-24 px-6 py-28'>
-      <SectionHead scene='SCENE 07 // THE VERDICT' title='CASE CLOSED?' text='Not quite. The subject is looking for the next case. Send a message or pick a link.' />
+      <SectionHead scene='SCENE 08 // THE VERDICT' title='CASE CLOSED?' text='Not quite. The subject is looking for the next case. Send a message or pick a link.' />
 
       <Reveal>
         <div className='grid gap-8 lg:grid-cols-[1fr_1.3fr]'>

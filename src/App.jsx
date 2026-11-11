@@ -16,6 +16,7 @@ import QuickView from './components/QuickView'
 import Terminal from './components/Terminal'
 import Timecode from './components/Timecode'
 import Toast from './components/Toast'
+import TryHackMe from './components/TryHackMe'
 
 function Site() {
   const { find } = useClues()
@@ -51,6 +52,7 @@ function Site() {
             <Cases />
             <Log />
             <Credentials />
+            <TryHackMe />
             <Terminal />
             <Contact />
             <Credits />

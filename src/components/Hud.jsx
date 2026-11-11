@@ -14,7 +14,7 @@ export default function Hud({ lights, onLights, onQuick }) {
         <a href='#top' className='font-title text-xl tracking-[0.2em] text-white'>
           CASE <span className='text-blood-500'>001</span>
         </a>
-        <ul className='hidden items-center gap-6 font-mono text-xs tracking-widest text-slate-300 lg:flex'>
+        <ul className='hidden items-center gap-6 font-mono text-xs tracking-widest text-slate-300 xl:flex'>
           {NAV.map((item) => (
             <li key={item.href}>
               <a href={item.href} className='transition hover:text-blood-400'>{item.label}</a>

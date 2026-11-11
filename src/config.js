@@ -8,16 +8,34 @@ export const EMAIL = 'premgupta062006@gmail.com'
 export const LOCATION = 'Mumbai, Maharashtra'
 export const GITHUB = 'https://github.com/PremGupta06'
 export const LINKEDIN = 'https://www.linkedin.com/in/prem-gupta-616489335/'
-export const TRYHACKME = 'https://tryhackme.com/p/prem06'
 export const RESUME_URL = '/resume.pdf'
 export const PHOTO = ''
 
+export const TRYHACKME_USER = 'prem06'
+export const TRYHACKME = 'https://tryhackme.com/p/prem06'
+
+// Copy these numbers from your TryHackMe profile. Leave null to hide a tile.
+// Rank can be text, for example 'Top 5%'.
+export const THM_STATS = {
+  rank: null,
+  level: null,
+  rooms: null,
+  badges: null,
+  streak: null,
+}
+
+// Optional: paste the address of your TryHackMe badge image. Leave '' to hide it.
+export const THM_BADGE = '/tryhackme-badge.png'
+
+// Paths and rooms you completed, for example ['SOC Level 1', 'Pre Security'].
+export const THM_DONE = []
+
 // Paste the real addresses here. Leave a link as '' to hide its button.
 export const LINKS = {
-  alertSimulatorLive: 'https://soc-alert-simulator.vercel.app/', // live URL of the SOC Alert Simulator
-  alertSimulatorRepo: '', // GitHub repo of the SOC Alert Simulator
-  sshLabRepo: '', // GitHub repo of the SOC Home Lab
-  multiStageRepo: '', // GitHub repo of the Multi-Stage Attack Detection Lab
+  alertSimulatorLive: '',
+  alertSimulatorRepo: '',
+  sshLabRepo: 'https://github.com/PremGupta06/SOC-Home-Lab-SSH-BruteForce-Detection',
+  multiStageRepo: 'https://github.com/PremGupta06/SOC-MultiStage-Attack-Detection-Lab',
 }
 
 export const BONUS = 'You found every clue, detective. Put the code word CASE-CLOSED in your message and I will reply first.'
@@ -34,6 +52,7 @@ export const NAV = [
   { label: 'CASES', href: '#cases' },
   { label: 'LOG', href: '#log' },
   { label: 'RECORDS', href: '#records' },
+  { label: 'TRAINING', href: '#training' },
   { label: 'TERMINAL', href: '#terminal' },
   { label: 'CONTACT', href: '#contact' },
 ]

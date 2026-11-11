@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { TOTAL, useClues } from '../ClueContext'
-import { ABOUT, EMAIL, GITHUB, LINKEDIN, LOCATION, ROLE, TRYHACKME } from '../config'
+import { ABOUT, EMAIL, GITHUB, LINKEDIN, LOCATION, ROLE, THM_DONE, THM_STATS, TRYHACKME } from '../config'
 import { CERTS, EDUCATION, EVIDENCE, PROJECTS } from '../content'
 import { SectionHead } from './ui'
 
-const QUICK = ['help', 'whoami', 'skills', 'projects', 'education', 'certs', 'contact']
+const QUICK = ['help', 'whoami', 'skills', 'projects', 'education', 'certs', 'tryhackme', 'contact']
 
 function answer(cmd, found) {
   switch (cmd) {
@@ -26,6 +26,14 @@ function answer(cmd, found) {
       lines.push('TryHackMe: ' + TRYHACKME)
       return lines
     }
+     case 'tryhackme': {
+     const lines = ['TryHackMe: ' + TRYHACKME]
+         for (const key of Object.keys(THM_STATS)) {
+           if (THM_STATS[key] !== null && THM_STATS[key] !== '') lines.push(key + ': ' + THM_STATS[key])
+         }
+         if (THM_DONE.length) lines.push('Completed: ' + THM_DONE.join(', '))
+         return lines
+       }
     case 'hint':
       return ['1. Evidence leaves fingerprints.', '2. Some orders need more power than a visitor has.', '3. Old gamers remember a famous code. Use your keyboard.']
     case 'clues':
@@ -93,7 +101,7 @@ export default function Terminal() {
 
   return (
     <section id='terminal' className='mx-auto max-w-4xl scroll-mt-24 px-6 py-28'>
-      <SectionHead scene='SCENE 06 // THE INTERROGATION' title='ASK THE SUBJECT' text='A real terminal. Type a command, or tap one below.' />
+      <SectionHead scene='SCENE 07 // THE INTERROGATION' title='ASK THE SUBJECT' text='A real terminal. Type a command, or tap one below.' />
 
       <div
         className='overflow-hidden rounded-2xl border border-neon/30 bg-black/80 shadow-[0_0_40px_rgba(34,211,238,0.08)]'
