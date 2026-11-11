@@ -32,8 +32,8 @@ export const THM_DONE = []
 
 // Paste the real addresses here. Leave a link as '' to hide its button.
 export const LINKS = {
-  alertSimulatorLive: '',
-  alertSimulatorRepo: '',
+  alertSimulatorLive: 'https://soc-alert-simulator.vercel.app/',
+  alertSimulatorRepo: 'https://github.com/PremGupta06/soc-alert-simulator',
   sshLabRepo: 'https://github.com/PremGupta06/SOC-Home-Lab-SSH-BruteForce-Detection',
   multiStageRepo: 'https://github.com/PremGupta06/SOC-MultiStage-Attack-Detection-Lab',
 }
